@@ -1,0 +1,52 @@
+.message {
+display: flex;
+    margin-top: 5px;
+}
+
+.avatar img {
+   margin-top: 7px;
+    width: 45px;
+    height: 45px;
+    border-radius: 10px;
+    justify-content: end;
+    margin-right: 10px;
+
+}
+.name{
+    color: #58589f;
+}
+
+.text{
+    color: white;
+}
+.textMessage{
+   display: inline-flex;
+    height: 50px;
+    border-radius:11px;
+    background-color:  #195048;
+    position:relative;
+    -webkit-border-radius: 5px;
+}
+
+.textMessage::after {
+    content: '';
+    position: absolute;
+    left: -17px; top: 87%;
+    border: 5px solid transparent;
+    border-right: 20px solid #195048;
+    transform:  rotate(-15deg);
+}
+
+
+.inTextMessage{
+
+margin: 5px 20px 5px 10px;
+}
+
+.time{
+   color: green;
+    display: flex;
+ align-items: end;
+    margin-right: 10px;
+    font-size: 13px;
+}
