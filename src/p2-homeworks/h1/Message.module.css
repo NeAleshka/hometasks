@@ -31,7 +31,7 @@ display: flex;
 .textMessage::after {
     content: '';
     position: absolute;
-    left: -17px; top: 87%;
+    left: -17px; top: 86%;
     border: 5px solid transparent;
     border-right: 20px solid #195048;
     transform:  rotate(-15deg);
