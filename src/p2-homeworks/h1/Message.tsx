@@ -14,7 +14,7 @@ function Message(props:propsMessage) {
     return (
         <div className={style.message}>
 <div className={style.avatar}>
-    <img src={props.avatar}/>
+    <img src={props.avatar} alt={'Logo'}/>
 </div>
             <div className={style.textMessage}>
                 <div className={style.inTextMessage}>
