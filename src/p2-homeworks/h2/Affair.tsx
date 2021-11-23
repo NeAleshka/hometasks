@@ -12,12 +12,11 @@ function Affair(props: AffairPropsType) {
         props.deleteAffairCallback(props.affair._id)
     }
     return (
-        <div className={styleClass.affair}>
-         <div key={props.affair._id} className={styleClass.name}>{props.affair.name}</div>
-        <div className={styleClass.priority}>{props.affair.priority}</div>
+        <div className={styleClass.affair} key={props.affair._id}>
+         <div  className={styleClass.name}>{props.affair.name}</div>
+            <div className={styleClass.priority}>{props.affair.priority}</div>
             <button className={styleClass.button} onClick={deleteCallback}>X</button>
         </div>
     )
 }
-
 export default Affair
