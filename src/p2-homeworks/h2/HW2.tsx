@@ -22,14 +22,16 @@ export const filterAffairs = (affairs: Array<AffairType>, filter: FilterType): A
     return affairs.filter(f=>f.priority===filter)
 }
 export const deleteAffair = (affairs: Array<AffairType>, _id: number): Array<AffairType> => {return affairs.filter(f=>f._id!==_id)}
-
+const style={
+    backgroundColor: "#143891"
+}
 function HW2() {
     const [affairs, setAffairs] = useState<Array<AffairType>>(defaultAffairs)
     const [filter, setFilter] = useState<FilterType>('all')
     const filteredAffairs = filterAffairs(affairs, filter)
     const deleteAffairCallback = (_id: number) => setAffairs(deleteAffair(affairs, _id))
     return (
-        <div>
+        <div style={style}>
             <hr/>
             <h2>HomeTask2</h2>
             <Affairs data={filteredAffairs}

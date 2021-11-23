@@ -1,7 +1,43 @@
-.someClass {
+.hw3{
+    background-color: #61dafb;
+}
 
+
+.buttonAdd {
+    margin-left: 20px;
+    height: 40px;
+    width: 40px;
+    border-radius: 10px;
 }
 
 .error {
     background-color: red;
+    text-align: center;
+}
+
+.inputName{
+    height: 40px;
+    margin-left: 30px;
+
+}
+
+.totalUsers{
+    display: inline-block;
+margin-left: 20px;
+    color: #3d313b;
+    background-color: bisque;
+    height: 40px;
+    padding-top: 10px;
+    width: 200px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.textError{
+
+    color: red;
+    font-size: 16px;
+    display: flex;
+    margin-left: 50px;
+
 }

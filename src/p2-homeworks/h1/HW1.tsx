@@ -7,10 +7,12 @@ const messageData = {
     message: 'some text',
     time: '22:00',
 }
-
+const style={
+    backgroundColor: "#49b61c"
+}
 function HW1() {
     return (
-        <div>
+        <div style={style}>
             <hr/>
             <h2>HomeTask1</h2>
 

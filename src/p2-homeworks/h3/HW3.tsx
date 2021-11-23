@@ -18,10 +18,13 @@ function HW3() {
         setUsers(newUser)
     }
 
+    const style={
+        backgroundColor: "#61dafb"
+    }
     return (
-        <div>
+        <div style={style} >
             <hr/>
-           <h1>HomeTask 3 </h1>
+           <h2>HomeTask 3 </h2>
 
             {/*should work (должно работать)*/}
             <GreetingContainer users={users} addUserCallback={addUserCallback}/>
