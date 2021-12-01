@@ -12,13 +12,18 @@ function HW4() {
         if (error) {
             alert('введите текст...')
         } else {
-            alert(text) // если нет ошибки показать текст
+            if(text.trim()) {
+                alert(text) // если нет ошибки показать текст
+            } else {
+                alert('ты шо пробелов наделал')
+            }
+
         }
     }
 
     const [checked, setChecked] = useState<boolean>(false)
     const testOnChange = (e: ChangeEvent<HTMLInputElement>) => setChecked(e.currentTarget.checked)
-
+    console.log( `checked=${checked}`)
     return (
         <div>
             <hr/>
@@ -34,7 +39,7 @@ function HW4() {
                 />
 
                 <SuperInputText
-                    className={s.blue} // проверьте, рабоет ли смешивание классов
+                    className={s.blue} // проверьте, работает ли смешивание классов
                 />
 
                 {/*----------------------------------------------------*/}
@@ -44,7 +49,7 @@ function HW4() {
                 </SuperButton>
 
                 <SuperButton
-                    red // пропсу с булевым значением не обязательно указывать true
+                    red // пропсу с булевым значением необязательно указывать true
                     onClick={showAlert}
                 >
                     delete {/*// название кнопки попадёт в children*/}
@@ -57,8 +62,7 @@ function HW4() {
                 {/*----------------------------------------------------*/}
 
                 <SuperCheckbox
-                    checked={checked}
-                    onChangeChecked={setChecked}
+                    checked={checked} onChangeChecked={setChecked}
                 >
                     some text {/*// этот текст попадёт в children*/}
                 </SuperCheckbox>

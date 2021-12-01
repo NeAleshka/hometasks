@@ -31,7 +31,7 @@ const Greeting: React.FC<GreetingPropsType> = (
         setName('')
     }
 
-    const totalUsers = users.length // need to fix
+    const totalUsers = users.length
 
     const inputClassError = error ? s.error : ''
 
