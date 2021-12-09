@@ -1,0 +1,30 @@
+.navLink{
+    text-decoration: none;
+   color: white;
+    margin: 10px;
+}
+.navLink:hover{
+    border-bottom: 3px solid yellow;
+}
+.activeNavLink{
+    color: lime;
+}
+
+.header{
+display: flex;
+    width: 300px;
+    transition-duration: 500ms;
+    transform: translate(-250px);
+    align-items: center;
+}
+.header:hover{
+    transition-duration: 500ms;
+    transform: translate(0);
+}
+
+.block{
+width: 20px;
+height: 20px;
+    margin:10px 10px 10px 25px;
+    background: #25c53a;
+}

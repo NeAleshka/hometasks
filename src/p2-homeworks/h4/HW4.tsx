@@ -23,12 +23,14 @@ function HW4() {
 
     const [checked, setChecked] = useState<boolean>(false)
     const testOnChange = (e: ChangeEvent<HTMLInputElement>) => setChecked(e.currentTarget.checked)
-    console.log( `checked=${checked}`)
-    return (
-        <div>
-            <hr/>
-            homeworks 4
+const style={
+      backgroundColor:'yellow'
+}
 
+    return (
+        <div style={style}>
+            <hr/>
+            <h2>  HomeTask 4</h2>
             <div className={s.column}>
                 <SuperInputText
                     value={text}
