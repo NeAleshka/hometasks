@@ -16,8 +16,7 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUser
 
 
     return (
-        <Greeting users={users}
-                  addUserCallback={addUserCallback}/>
+        <Greeting users={users} addUserCallback={addUserCallback}/>
     )
 }
 

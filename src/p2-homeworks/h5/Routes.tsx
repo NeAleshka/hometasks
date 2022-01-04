@@ -11,13 +11,13 @@ export const PATH = {
     JuniorPlus:'/junior+'
 }
 
-
 function RoutesPage() {
 
     return (
         <div>
             <Routes>
                     <Route path={'/'} element={<PreJunior/>}/>
+                    <Route path={PATH.PRE_JUNIOR} element={<PreJunior/>}/>
                     <Route path={PATH.Junior} element={<Junior/>}/>
                     <Route path={PATH.JuniorPlus} element={<JuniorPlus/>}/>
                     <Route path={'/*'} element={<Error404/>}/>

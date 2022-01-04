@@ -6,6 +6,7 @@ type DefaultButtonPropsType = DetailedHTMLProps<ButtonHTMLAttributes<HTMLButtonE
 
 type SuperButtonPropsType = DefaultButtonPropsType & {
     red?: boolean
+    cursor?:string
 }
 
 const SuperButton: React.FC<SuperButtonPropsType> = (
@@ -19,6 +20,7 @@ const SuperButton: React.FC<SuperButtonPropsType> = (
     return (
         <button
             className={finalClassName}
+            style={{cursor:restProps.cursor}}
             {...restProps} // отдаём кнопке остальные пропсы если они есть (children там внутри)
         />
     )

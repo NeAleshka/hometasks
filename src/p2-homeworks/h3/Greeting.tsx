@@ -23,8 +23,7 @@ const Greeting: React.FC<GreetingPropsType> = (
     }
     const addUser = () => {
         if (!name.trim()) {
-            setError('Name is empty!!!')
-            return
+            return  setError('Name is empty!!!')
         }
         addUserCallback(name)
         alert(`Hello ${name}!`)
@@ -32,7 +31,6 @@ const Greeting: React.FC<GreetingPropsType> = (
     }
 
     const totalUsers = users.length
-
     const inputClassError = error ? s.error : ''
 
     return (
