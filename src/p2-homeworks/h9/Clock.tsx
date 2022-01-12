@@ -24,21 +24,18 @@ function Clock() {
         setShow(false)
     }
 
-    const stringTime = date.toTimeString().split(' ')[0]
-    const stringDate = new Date().toLocaleDateString()
-
     return (
         <div>
             <div
                 onMouseEnter={onMouseEnter}
                 onMouseLeave={onMouseLeave}
             >
-                {stringTime}
+                {date.toTimeString().split(' ')[0]}
             </div>
 
             {show && (
                 <div>
-                    {stringDate}
+                    {new Date().toLocaleDateString()}
                 </div>
             )}
 
