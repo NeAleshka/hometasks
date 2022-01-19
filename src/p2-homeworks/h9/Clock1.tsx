@@ -1,7 +1,10 @@
 import React, {useState} from 'react'
 import SuperButton from '../h4/common/c2-SuperButton/SuperButton'
+import Clock from 'react-clock';
 
-function Clock() {
+import 'react-clock/dist/Clock.css';
+
+function Clock1() {
     const [timerId, setTimerId] = useState<number>(0)
     const [date, setDate] = useState<Date>(new Date())
     const [show, setShow] = useState<boolean>(false)
@@ -12,7 +15,7 @@ function Clock() {
     const start = () => {
         stop()
         const id: number = window.setInterval(() => {
-             setDate(new Date())
+            setDate(new Date())
         }, 1000)
         setTimerId(id)
     }
@@ -26,11 +29,15 @@ function Clock() {
 
     return (
         <div>
+            <div>
+                <Clock value={date}/>
+            </div>
             <div
                 onMouseEnter={onMouseEnter}
                 onMouseLeave={onMouseLeave}
             >
                 {date.toTimeString().split(' ')[0]}
+
             </div>
 
             {show && (
@@ -46,4 +53,4 @@ function Clock() {
     )
 }
 
-export default Clock
+export default Clock1
