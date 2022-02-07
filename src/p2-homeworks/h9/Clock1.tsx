@@ -1,8 +1,8 @@
 import React, {useState} from 'react'
 import SuperButton from '../h4/common/c2-SuperButton/SuperButton'
 import Clock from 'react-clock';
-
 import 'react-clock/dist/Clock.css';
+
 
 function Clock1() {
     const [timerId, setTimerId] = useState<number>(0)
@@ -30,7 +30,7 @@ function Clock1() {
     return (
         <div>
             <div>
-                <Clock value={date}/>
+                <Clock value={date} className={'styleClock'} />
             </div>
             <div
                 onMouseEnter={onMouseEnter}
